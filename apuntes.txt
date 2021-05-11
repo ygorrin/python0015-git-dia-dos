@@ -1,0 +1,23 @@
+Comando    //   Explicación 
+pwd        //    Nos dice la carpeta actual donde estamos. 
+ls         //     Lista el contenido que tenemos dentro.
+ls -al     //     lista de manera ordenada y mas detallada.
+cd 	   //     entrar a una carpeta. 
+cd ..      //     entrar a la carpeta ANTERIOR. 
+cd xxx [presionar tecla TABULACIÓN] //   rellena con el restante del nombre de un archivo o carpeta.
+clear    //   limpia pantalla
+cat        //    muestra el contenido de un archivo. 
+history 	// comandos ejecutados anteriormente 
+
+GIT
+
+git init  // crea un repositorio LOCAL en mi carpeta actual.
+
+git add <nombre archivo>  // sube el archivo o directorio al escenario (stage). 
+git add .  // sube todos los cambios al escenario
+git restore . //saca los archivos del escenario
+git add --all  // mismo que anterior
+git add -A // mismo que anterior
+
+//crea un alias llamado "s" para hacer un status mas resumido.
+git  config --global alias.s "status -s -b"  // se ejecuta una sola vez por PC o Mac.
