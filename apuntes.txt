@@ -40,3 +40,4 @@ git reset --soft HEAD^    // Quita el ultimo commit y deja los archivos en el es
                           // de los cambios no está aun en el escenario. 
 
 git config --global alias.lg "log --oneline --decorate --all --graph"
+
