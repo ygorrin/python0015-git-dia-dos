@@ -15,9 +15,27 @@ git init  // crea un repositorio LOCAL en mi carpeta actual.
 
 git add <nombre archivo>  // sube el archivo o directorio al escenario (stage). 
 git add .  // sube todos los cambios al escenario
-git restore . //saca los archivos del escenario
 git add --all  // mismo que anterior
 git add -A // mismo que anterior
 
+git restore . //saca los archivos del escenario (que son ya parte de algun commit)
+git rm --cached <file>  // saca los archivos del escenario que no son parte de algun commit. es decir son nuevos.
+
+
+
 //crea un alias llamado "s" para hacer un status mas resumido.
 git  config --global alias.s "status -s -b"  // se ejecuta una sola vez por PC o Mac.
+
+
+git commit -m "<<mensaje>>"  //  sacamos una foto al ESCENARIO.
+git commit --amend -m "este es un primer commit desde GIT"
+
+git log  // veo los commits registrados.
+
+git reset --soft HEAD^    // Quita el ultimo commit y deja los archivos en el escenario. 
+                          // Deja todo como si no se hubiera ejecutado el commit.  
+                          // Si algun archivo tiene nuevas modificaciones, dirá que 
+                          // tiene modificacion pendientes en el escenario y al mismo 
+                          // tiempo puede tambien estar en el escenario. Solo que uno 
+                          // de los cambios no está aun en el escenario. 
+
